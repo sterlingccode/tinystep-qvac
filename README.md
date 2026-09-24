@@ -1,6 +1,6 @@
 # TinyStep
 
-TinyStep is a simple localhost app that turns an overwhelming task into one tiny next action, three quick checks, and a rough time estimate.
+sterlingccode TinyStep is a simple localhost app that turns an overwhelming task into one tiny next action, three quick checks, and a rough time estimate.
 
 ## Built with
 
