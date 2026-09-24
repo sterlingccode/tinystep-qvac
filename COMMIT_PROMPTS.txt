@@ -1,0 +1,29 @@
+Use these one at a time in Claude Code from inside the tinystep-qvac folder.
+
+COMMIT 1/4
+Review the existing TinyStep app and make a small, meaningful foundation improvement: add a simple GET /api/health endpoint, improve startup/error messages, and add a Node.js version requirement to package.json. Do not change the app's core behavior.
+
+Then run:
+git add .
+git commit -m "chore: prepare TinyStep project"
+
+COMMIT 2/4
+Review the existing QVAC implementation. Keep @qvac/sdk 0.20.0, loadModel(), and completion(). Improve the QVAC error handling and model-loading flow without replacing QVAC or adding any cloud AI API.
+
+Then run:
+git add .
+git commit -m "feat: harden QVAC integration"
+
+COMMIT 3/4
+Improve the TinyStep UI with a cleaner loading state, clearer results, better mobile spacing, and a reset/clear action. Keep the app simple and responsive.
+
+Then run:
+git add .
+git commit -m "feat: improve TinyStep UI"
+
+COMMIT 4/4
+Update README.md so it clearly explains TinyStep, localhost setup, QVAC usage, and the project structure. Keep the MIT LICENSE and .gitignore. Add a short GitHub submission section. Do not change core functionality.
+
+Then run:
+git add .
+git commit -m "docs: finalize GitHub submission"

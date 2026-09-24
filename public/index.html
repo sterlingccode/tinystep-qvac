@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TinyStep — Turn overwhelm into one next move</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <span class="eyebrow">QVAC LOCAL AI</span>
+      <h1>TinyStep</h1>
+      <p>Paste a messy task. Get one tiny next move you can actually start.</p>
+    </section>
+
+    <section class="card">
+      <label for="task">What feels overwhelming?</label>
+      <textarea id="task" maxlength="4000" placeholder="Example: I need to finish my tourism presentation, research three destinations, make the slides, and practice before tomorrow..."></textarea>
+      <div class="row">
+        <span id="counter">0 / 4000</span>
+        <button id="analyze">Find my next step</button>
+      </div>
+      <p class="hint">Your text is processed by QVAC locally on your machine.</p>
+    </section>
+
+    <section id="loading" class="status hidden">Thinking locally with QVAC…</section>
+    <section id="error" class="error hidden"></section>
+
+    <section id="result" class="result hidden">
+      <div class="result-head">
+        <div>
+          <span class="eyebrow">YOUR TINY PLAN</span>
+          <h2 id="title"></h2>
+        </div>
+        <button id="copy" class="ghost">Copy</button>
+      </div>
+      <p id="why" class="why"></p>
+
+      <div class="next-box">
+        <span class="label">START HERE</span>
+        <p id="nextStep"></p>
+      </div>
+
+      <div class="grid">
+        <div>
+          <span class="label">3 QUICK CHECKS</span>
+          <ul id="checklist"></ul>
+        </div>
+        <div>
+          <span class="label">TIME</span>
+          <p id="timeEstimate"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
